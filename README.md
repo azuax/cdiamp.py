@@ -19,6 +19,14 @@ Then, configure an AWS profile with the access and secret key of that user.
 aws configure --profile <profilename>
 ```
 
+Create the virtual environment for the dependency libraries
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
 Finally, run the tool with the profile name as parameter.
 
 ```sh
@@ -50,6 +58,7 @@ Where the principals could be:
 
 ## ToDo
 
+-   [ ] Consider Wildcards in the actions.
 -   [ ] Identify if the dangerous permission is related to an `Allow` effect in the policy.
 -   [ ] Configure more input arguments, like the destination folder.
 -   [ ] Allow the usage of access keys for performing the API calls instead of configure a profile.
