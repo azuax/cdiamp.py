@@ -54,4 +54,7 @@ Where the principals could be:
 -   [ ] Configure more input arguments, like the destination folder.
 -   [ ] Allow the usage of access keys for performing the API calls instead of configure a profile.
 -   [ ] Check if there are policy versions and verify on those too.
+-   [ ] Add header rows for output files.
+-   [ ] Do not create empty files if there isn't any principal related to a risky permission.
+-   [ ] Modify the file `identified_risky_policies.csv` to have more info such as how many principals are related to the policy.
 -   [ ] Any suggestion you may have!
